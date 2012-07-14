@@ -192,5 +192,6 @@ public class MainActivity extends Activity {
             mAdapter.disableForegroundDispatch(this);
     }
 
+    // FAKE COMMENT
     
 }
