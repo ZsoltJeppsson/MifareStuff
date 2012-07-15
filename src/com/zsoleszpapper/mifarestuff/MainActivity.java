@@ -161,7 +161,8 @@ public class MainActivity extends Activity {
                     mTextView.setText("Authentication error");
                 }
             } catch (IOException e) {
-                Log.e(TAG, e.getLocalizedMessage());
+            	String errorMessage = e.getLocalizedMessage();
+            	Log.e(TAG, errorMessage!=null ? errorMessage : "Unknown exception");
             }
         }
     }
